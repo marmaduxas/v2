@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Sveiki{% endblock %}
+
+{% block content %}
+{% comment %} {% load i18n %} {% endcomment %}
+  <h1>Sveiki</h1>
+<ul>
+    <li><strong>projektai:</strong> {{ count_projects }}</li>
+    <li><strong>klientai:</strong> {{ count_clients }}</li>
+</ul>
+{% endblock content %}
